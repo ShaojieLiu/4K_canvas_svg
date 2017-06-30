@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas_vs_svg</title>
+    <link rel="stylesheet" href="./vs.css">
+</head>
+<body>
+    <p>关于canvas和svg平面绘图性能的调研</p>
+    <div class="main"></div>
+    <svg class="grandson" id='svg${num}'>
+        <!--<circle cx="0" cy="0" r="20" stroke="red" stroke-width="1" fill="transparent">-->
+            <!--<animateMotion path="M150,20 L280,75 L150,130 L20,75 L150,20" begin="0s" dur="3s" repeatCount="indefinite"/>-->
+        <!--</circle>-->
+        <!--<path d="M150,20 L280,75 L150,130 L20,75 L150,20" stroke="blue" stroke-width="2" fill="none" />-->
+    </svg>
+    <!--<button id="animationButton">animationButton</button>-->
+    <!--<canvas id="canvas"></canvas>-->
+
+<script>
+    let e = (sel) => document.querySelector(sel)
+    let log = (...arg) => console.log(...arg)
+</script>
+<script src="./insert.js"></script>
+<script src="./vs.js"></script>
+<script src="./frame.js"></script>
+<script src="./path.js"></script>
+
+</body>
+</html>

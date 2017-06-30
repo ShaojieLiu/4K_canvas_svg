@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vs</title>
+</head>
+<body>
+    <div class="main"></div>
+
+<script src="src/insert.js"></script>
+<script src="src/ultis.js"></script>
+<script src="src/frame.js"></script>
+<script src="src/path.js"></script>
+<script>
+es('.grandson').forEach(function(ele) {
+     ele.style.display = 'none'
+})
+animationButton.onclick = function(ev){
+    canvasPause = !canvasPause
+
+    if (canvasPause) {
+//        animationButton.value = 'Animate';
+        canvas.style.display = 'none'
+        animationButton.innerText = 'CANVAS'
+
+    }else{
+        window.requestAnimationFrame(animate);
+//        animationButton.value = 'Pause';
+        canvas.style.display = 'inline-block'
+        animationButton.innerText = 'SVG'
+
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.main, body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.dad{
+    display: flex;
+    justify-content: center;
+}
+.son{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+.grandson{
+    outline:1px solid royalblue;
+    margin:10px;
+}
