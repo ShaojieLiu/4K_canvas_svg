@@ -12,7 +12,7 @@ var svgPath = function() {
         // path = "M150,20 L280,75 L150,130 L20,75 L150,20"
     let ball = function(count) {return `
         <circle cx="0" cy="0" r="${r}" stroke=#${Math.floor(Math.random()*(2 << 23)).toString(16)} stroke-width="2" fill="transparent">
-            <animateMotion class="path" begin="${0}s" dur="${3-0.001*count}s" repeatCount="indefinite" 
+            <animateMotion class="path" begin="${0}s" dur="${0.5 + 0.01*count}s" repeatCount="indefinite" 
             path="${p}"/>
         </circle>
     `}
